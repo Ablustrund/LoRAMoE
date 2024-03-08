@@ -1,0 +1,52 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "json",
+  "dataset_size": 1428329,
+  "description": "",
+  "download_checksums": {
+    "/public/zhouenyu/moe-master-light/loramoe/data/tiny_data/test.json": {
+      "num_bytes": 1527467,
+      "checksum": null
+    }
+  },
+  "download_size": 1527467,
+  "features": {
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "task_types": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 2955796,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1428329,
+      "num_examples": 1565,
+      "dataset_name": "json"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

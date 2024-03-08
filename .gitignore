@@ -1,0 +1,8 @@
+output/
+wandb/
+run_moe.sh
+run_multi_node.sh
+single_lora_run_sft.sh
+run_loramoe_bak.sh
+data/tiny_data/test_1024
+data/tiny_data/train/train_1024
