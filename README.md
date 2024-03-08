@@ -11,7 +11,7 @@ You can quickly export the environment by using the follow command:
 conda env create -f environment.yml
 ```
 
-Moreover, we *do not* install the `peft` to avoid the conflicts with the local `peft` package.
+We *do not* install the `peft` to avoid the conflicts with the local `peft` package.
 
 ## Usage
 
