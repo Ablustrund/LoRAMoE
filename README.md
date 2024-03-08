@@ -10,10 +10,28 @@ You can quickly export the environment by using the follow command:
 ```bash
 conda env create -f environment.yml
 ```
+or
+```bash
+conda create -n loramoe python=3.10 -y
+
+pip install -r requirements.txt
+```
 
 We *do not* install the `peft` to avoid the conflicts with the local `peft` package.
 
 ## Usage
+
+### Data Format
+
+We construct a tiny dataset to demonstrate the data format during the training and inference phase and evaluate the correct of code.
+
+```
+data/
+|--tiny_data/
+  |--train/train.json
+  |--test.json
+```
+
 
 ### Train LoRAMoE on Single Node
 ```bash
