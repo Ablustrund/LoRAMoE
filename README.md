@@ -48,7 +48,6 @@ In `transformers`, we mainly change `modeling_llama.py` to introduce new para `t
 
 In `peft`, we replace the original LoRA class with the mixtures of experts architecture.
 
-*Readme.md is coming soon~ about one day*
 
 ## Citation
 If you find this useful in your research, please consider citing
