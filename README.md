@@ -44,6 +44,10 @@ bash run_loramoe.sh
 
 ## Note: Our main changes to `transformers` and `peft`
 
+In `transformers`, we mainly change `modeling_llama.py` to introduce new para `task_types`.
+
+In `peft`, we replace the original LoRA class with the mixtures of experts architecture.
+
 *Readme.md is coming soon~ about one day*
 
 ## Citation
