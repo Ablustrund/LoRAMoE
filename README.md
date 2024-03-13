@@ -40,7 +40,13 @@ bash run_loramoe.sh
 
 ### Explanations of Hyper-parameters
 
-*Readme.md is coming soon~ about one day*
+
+| blc weight    | blc alpha | LoRA rank     | LoRA alpha | LoRA trainable |LoRA dropout |LoRA num |
+|---------------|---------------|---------------|------------|----------------|---------------| --------|
+| the strength of localized balance constraints |degree of imbalance | rank of LoRA experts | LoRA scale  | where LoRA layer is added | dropout rate in LoRA|number of experts|
+
+
+
 
 ## Note: Our main changes to `transformers` and `peft`
 
