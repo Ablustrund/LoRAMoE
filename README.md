@@ -43,7 +43,7 @@ bash run_loramoe.sh
 
 | blc weight    | blc alpha | LoRA rank     | LoRA alpha | LoRA trainable |LoRA dropout |LoRA num |
 |---------------|---------------|---------------|------------|----------------|---------------| --------|
-| the strength of localized balance constraints |degree of imbalance | rank of LoRA experts | LoRA scale  | where LoRA layer is added | dropout rate in LoRA|number of experts|
+| the strength of localized balance constraints |degree of imbalance | rank of LoRA experts | LoRA scale  | where the LoRA layers are added | dropout rate in LoRA|number of experts|
 
 
 
