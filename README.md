@@ -54,6 +54,28 @@ In `transformers`, we mainly change `modeling_llama.py` to introduce new para `t
 
 In `peft`, we replace the original LoRA class with the mixtures of experts architecture.
 
+## How to Evaluate
+We use [opencompass](https://github.com/open-compass/opencompass/tree/main) for evaluation. To run LoRAMoE on opencompass:
+
+- In `opencompass/opencompass/models/huggingface.py`, add: 
+```python
+import sys
+sys.path.insert(0, 'path_to_your_current_dir_containing_changed_peft&transformers')
+```
+- In the config file
+```python
+models = [
+    dict(
+        type=HuggingFaceCausalLM,
+        abbr='',
+        path="path_to_base_model",
+        tokenizer_path='path_to_tokenizer',
+        peft_path='path_to_loramoe',
+        ...
+    )
+]
+```
+
 
 ## Citation
 If you find this useful in your research, please consider citing
@@ -67,4 +89,3 @@ If you find this useful in your research, please consider citing
       primaryClass={cs.CL}
 }
 ```
-
